@@ -1,33 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Import the Tailwind CSS base styles */
+@import 'tailwindcss/base';
+/* Import the Tailwind CSS components styles */
+@import 'tailwindcss/components';
+/* Import the Tailwind CSS utility styles */
+@import 'tailwindcss/utilities';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* global.css or your component styles */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: #1a202c; /* Set to your desired dark background color */
+    color: #ffffff; /* Set text color for better visibility on dark background */
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+  
+/* Add more specific styles for your components or sections if needed */
+  
